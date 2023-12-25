@@ -7,6 +7,9 @@ export async function getVoters() {
         name: true,
         email: true,
       },
+      orderBy: {
+        createdAt: "desc",
+      },
     });
     return voters;
   } catch (error) {

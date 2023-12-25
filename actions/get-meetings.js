@@ -13,6 +13,9 @@ export async function getMeetings() {
           },
         },
       },
+      orderBy: {
+        createdAt: 'desc',
+      },
     });
     return meetings;
   } catch (error) {
