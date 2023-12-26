@@ -18,19 +18,19 @@ const NavSheet = () => {
   const pathname = usePathname();
   const tabs = [
     {
-      title: "Overview",
+      title: "Resumen",
       href: "/",
     },
     {
-      title: "Leaders",
+      title: "Lideres",
       href: "/leaders",
     },
     {
-      title: "Voters",
+      title: "Votantes",
       href: "/voters",
     },
     {
-      title: "Meetings",
+      title: "Reuniones",
       href: "/meetings",
     },
   ];
@@ -38,7 +38,7 @@ const NavSheet = () => {
   return (
     <Sheet>
       <SheetTrigger>
-      <AlignLeft size={24} />
+        <AlignLeft size={24} />
       </SheetTrigger>
       <SheetContent side="left">
         <div className="flex flex-col space-y-4 mt-4">

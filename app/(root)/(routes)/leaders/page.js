@@ -20,15 +20,15 @@ export default async function Leaders() {
     <>
       <div className="flex items-center justify-end">
         <Link href="/add-leader" className={buttonVariants()}>
-          Add leader
+          Agregar lider
           <PlusCircle size={20} className="ml-2" />
         </Link>
       </div>
       <Card className="lg:w-1/2">
         <CardHeader>
-          <CardTitle>Leaders</CardTitle>
+          <CardTitle>Lideres</CardTitle>
           <CardDescription>
-            A total of {leaders.length} leaders are registered
+            Un total de {leaders.length} lideres registrados
           </CardDescription>
         </CardHeader>
         <CardContent>

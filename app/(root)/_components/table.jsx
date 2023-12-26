@@ -16,12 +16,11 @@ const MeetingTable = ({ meetings }) => {
 
   return (
     <Table>
-      <TableCaption>A list of registered meetings.</TableCaption>
       <TableHeader>
         <TableRow>
-          <TableHead className="font-medium">Place</TableHead>
-          <TableHead className="font-medium">Leader</TableHead>
-          <TableHead className="font-medium text-right">Date & Time</TableHead>
+          <TableHead className="font-medium">Lugar</TableHead>
+          <TableHead className="font-medium">Lider</TableHead>
+          <TableHead className="font-medium text-right">Fecha & Hora</TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>
@@ -29,7 +28,9 @@ const MeetingTable = ({ meetings }) => {
           <TableRow key={meeting.id}>
             <TableCell>{meeting.place}</TableCell>
             <TableCell>{meeting.leader.name}</TableCell>
-            <TableCell className="text-right">{format(new Date(meeting.date) , "PPpp")}</TableCell>
+            <TableCell className="text-right">
+              {format(new Date(meeting.date), "PPpp")}
+            </TableCell>
           </TableRow>
         ))}
       </TableBody>

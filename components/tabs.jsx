@@ -9,19 +9,19 @@ const NavTabs = () => {
 
   const tabs = [
     {
-      title: "Overview",
+      title: "Resumen",
       href: "/",
     },
     {
-      title: "Leaders",
+      title: "Lideres",
       href: "/leaders",
     },
     {
-      title: "Voters",
+      title: "Votantes",
       href: "/voters",
     },
     {
-      title: "Meetings",
+      title: "Reuniones",
       href: "/meetings",
     },
   ];

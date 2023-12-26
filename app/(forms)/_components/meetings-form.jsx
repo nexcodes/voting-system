@@ -74,11 +74,11 @@ export function MeetingsForm({ leaders }) {
             name="place"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Place</FormLabel>
+                <FormLabel>Lugar</FormLabel>
                 <FormControl>
                   <Input disabled={isLoading} placeholder="" {...field} />
                 </FormControl>
-                <FormDescription>This is the meeting place.</FormDescription>
+                <FormDescription>Este es el lugar de encuentro.</FormDescription>
                 <FormMessage />
               </FormItem>
             )}
@@ -88,7 +88,7 @@ export function MeetingsForm({ leaders }) {
             name="leader"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Leader</FormLabel>
+                <FormLabel>Líder</FormLabel>
                 <Select onValueChange={field.onChange} disabled={isLoading}>
                   <FormControl>
                     <SelectTrigger>
@@ -104,8 +104,7 @@ export function MeetingsForm({ leaders }) {
                   </SelectContent>
                 </Select>
                 <FormDescription>
-                  This is the leader who is hosting the meeting.
-                </FormDescription>
+                Este es el líder que organiza la reunión.                </FormDescription>
                 <FormMessage />
               </FormItem>
             )}
@@ -116,7 +115,7 @@ export function MeetingsForm({ leaders }) {
           name="time"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Time</FormLabel>
+              <FormLabel>Tiempo</FormLabel>
               <FormControl>
                 <DateTimePicker
                   disabled={isLoading}
@@ -125,14 +124,13 @@ export function MeetingsForm({ leaders }) {
                 />
               </FormControl>
               <FormDescription>
-                This is the time of the meeting.
-              </FormDescription>
+              Este es el momento de la reunión.              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
         />
         <Button disabled={isLoading} type="submit">
-          Submit
+        Entregar
         </Button>
       </form>
     </Form>

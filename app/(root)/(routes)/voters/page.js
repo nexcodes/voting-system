@@ -17,15 +17,15 @@ export default async function Voters() {
     <>
       <div className="flex items-center justify-end">
         <Link href="/add-voter" className={buttonVariants()}>
-          Add Voters
+        Agregar votante
           <PlusCircle size={20} className="ml-2" />
         </Link>
       </div>
       <Card className="lg:w-1/2">
         <CardHeader>
-          <CardTitle>Voter</CardTitle>
+          <CardTitle>Votantes</CardTitle>
           <CardDescription>
-            A total of {voters.length} voters are registered
+          Un total de {voters.length} votantes registrados
           </CardDescription>
         </CardHeader>
         <CardContent>

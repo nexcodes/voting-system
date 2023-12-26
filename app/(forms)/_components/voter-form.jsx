@@ -85,12 +85,12 @@ export function VotersForm({ leaders }) {
             name="name"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Name</FormLabel>
+                <FormLabel>Nombre</FormLabel>
                 <FormControl>
                   <Input disabled={isLoading} placeholder="" {...field} />
                 </FormControl>
                 <FormDescription>
-                  This is the voters display name.
+                  Este es el nombre para mostrar de las votantes.{" "}
                 </FormDescription>
                 <FormMessage />
               </FormItem>
@@ -101,11 +101,13 @@ export function VotersForm({ leaders }) {
             name="age"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Age</FormLabel>
+                <FormLabel>Edad</FormLabel>
                 <FormControl>
                   <Input disabled={isLoading} placeholder="" {...field} />
                 </FormControl>
-                <FormDescription>This is the voters age.</FormDescription>
+                <FormDescription>
+                  Esta es la edad de las votantes.
+                </FormDescription>
                 <FormMessage />
               </FormItem>
             )}
@@ -116,12 +118,12 @@ export function VotersForm({ leaders }) {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Email</FormLabel>
+              <FormLabel>Correo electrónico</FormLabel>
               <FormControl>
                 <Input disabled={isLoading} placeholder="" {...field} />
               </FormControl>
               <FormDescription>
-                This is the voters email address.
+                Esta es la dirección de correo electrónico de los votantes.{" "}
               </FormDescription>
               <FormMessage />
             </FormItem>
@@ -133,12 +135,12 @@ export function VotersForm({ leaders }) {
             name="phone"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Phone number</FormLabel>
+                <FormLabel>Número de teléfono</FormLabel>
                 <FormControl>
                   <Input disabled={isLoading} placeholder="" {...field} />
                 </FormControl>
                 <FormDescription>
-                  This is the voters phone number.
+                  Este es el número de teléfono de los votantes.{" "}
                 </FormDescription>
                 <FormMessage />
               </FormItem>
@@ -149,7 +151,7 @@ export function VotersForm({ leaders }) {
             name="leader"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Leader</FormLabel>
+                <FormLabel>Líder</FormLabel>
                 <Select onValueChange={field.onChange} disabled={isLoading}>
                   <FormControl>
                     <SelectTrigger>
@@ -165,7 +167,7 @@ export function VotersForm({ leaders }) {
                   </SelectContent>
                 </Select>
                 <FormDescription>
-                  This is the leader of the voter.
+                  Esta es la líder de la votante.{" "}
                 </FormDescription>
                 <FormMessage />
               </FormItem>
@@ -173,7 +175,7 @@ export function VotersForm({ leaders }) {
           />
         </div>
         <Button disabled={isLoading} type="submit">
-          Submit
+          Entregar
         </Button>
       </form>
     </Form>

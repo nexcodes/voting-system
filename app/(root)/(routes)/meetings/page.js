@@ -11,7 +11,7 @@ export default async function Meetings() {
     <>
       <div className="flex items-center justify-end">
         <Link href="/add-meeting" className={buttonVariants()}>
-          Add Meeting
+        Agregar Reunión
           <PlusCircle size={20} className="ml-2" />
         </Link>
       </div>

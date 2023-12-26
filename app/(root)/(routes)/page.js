@@ -22,17 +22,17 @@ export default async function Home() {
 
   const cards = [
     {
-      title: "Leaders",
+      title: "Lideres",
       value: info[0],
       Icon: PersonStanding,
     },
     {
-      title: "Voters",
+      title: "Votantes",
       value: info[1],
       Icon: Vote,
     },
     {
-      title: "Meetings",
+      title: "Reuniones",
       value: info[2],
       Icon: Users,
     },
@@ -56,9 +56,9 @@ export default async function Home() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <Card>
           <CardHeader>
-            <CardTitle>Leaders</CardTitle>
+            <CardTitle>Lideres</CardTitle>
             <CardDescription>
-              A total of {leaders.length} leaders are registered
+              Un total de {leaders.length} lideres registrados
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -67,9 +67,9 @@ export default async function Home() {
         </Card>
         <Card>
           <CardHeader>
-            <CardTitle>Voter</CardTitle>
+            <CardTitle>Votantes</CardTitle>
             <CardDescription>
-              A total of {voters.length} voters are registered
+              Un total de {voters.length} votantes registrados
             </CardDescription>
           </CardHeader>
           <CardContent>
