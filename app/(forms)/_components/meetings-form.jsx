@@ -56,7 +56,7 @@ export function MeetingsForm({ leaders }) {
 
       const res = await axios.post("/api/add-meeting", data);
 
-      toast.success("Meeting created.");
+      toast.success("Reunión creada.");
     } catch (error) {
       toast.error("Something went wrong.");
       console.log(error);

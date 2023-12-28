@@ -28,7 +28,7 @@ export default async function Leaders() {
         <CardHeader>
           <CardTitle>Lideres</CardTitle>
           <CardDescription>
-            Un total de {leaders.length} lideres registrados
+            Un total de {leaders?.length || 0} lideres registrados
           </CardDescription>
         </CardHeader>
         <CardContent>

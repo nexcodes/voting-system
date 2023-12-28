@@ -67,7 +67,7 @@ export function VotersForm({ leaders }) {
         leaderId: values.leader,
       };
       const res = await axios.post("/api/add-voter", data);
-      toast.success("Voter created successfully.");
+      toast.success("Votante creado exitosamente.");
     } catch (error) {
       toast.error("Something went wrong.");
       console.log(error, "VOTER_FORM_ERROR");

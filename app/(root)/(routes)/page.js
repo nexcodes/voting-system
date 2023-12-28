@@ -13,7 +13,7 @@ import { getLeaders } from "@/actions/get-leaders";
 import { getVoters } from "@/actions/get-voters";
 
 export default async function Home() {
-  const info = await getAllInfo();
+  const info = await getAllInfo() || [];
   const leaders = await getLeaders({
     name: true,
     email: true,
@@ -23,17 +23,17 @@ export default async function Home() {
   const cards = [
     {
       title: "Lideres",
-      value: info[0],
+      value: info[0] || 0,
       Icon: PersonStanding,
     },
     {
       title: "Votantes",
-      value: info[1],
+      value: info[1] || 0,
       Icon: Vote,
     },
     {
       title: "Reuniones",
-      value: info[2],
+      value: info[2] || 0,
       Icon: Users,
     },
   ];
@@ -58,7 +58,7 @@ export default async function Home() {
           <CardHeader>
             <CardTitle>Lideres</CardTitle>
             <CardDescription>
-              Un total de {leaders.length} lideres registrados
+              Un total de {leaders?.length || 0} lideres registrados
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -69,7 +69,7 @@ export default async function Home() {
           <CardHeader>
             <CardTitle>Votantes</CardTitle>
             <CardDescription>
-              Un total de {voters.length} votantes registrados
+              Un total de {voters?.length || 0} votantes registrados
             </CardDescription>
           </CardHeader>
           <CardContent>

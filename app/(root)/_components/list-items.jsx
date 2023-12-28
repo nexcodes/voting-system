@@ -5,7 +5,7 @@ export function ListItems({ items }) {
 
   return (
     <div className="space-y-8">
-      {items.map((item, index) => {
+      {items?.map((item, index) => {
         const avatarPath =
           avatarPaths[Math.floor(Math.random() * avatarPaths.length)];
         return (

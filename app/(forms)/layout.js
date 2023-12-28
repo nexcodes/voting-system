@@ -8,7 +8,7 @@ export default function FormLayout({ children }) {
       <div className="space-y-4">
         <Link href="/" className={buttonVariants({ variant: "ghost" })}>
           <ChevronLeft size={20} />
-          Back
+          atrás
         </Link>
         {children}
       </div>

@@ -61,7 +61,7 @@ export function LeadersForm() {
         Area: values.area,
       };
       const res = await axios.post("/api/add-leader", data);
-      toast.success("Leader added successfully!");
+      toast.success("Líder agregado exitosamente¡");
     } catch (err) {
       toast.error("Something went wrong!");
       console.log(err, "LEADER_FORM_ERROR");

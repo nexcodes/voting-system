@@ -25,7 +25,7 @@ export default async function Voters() {
         <CardHeader>
           <CardTitle>Votantes</CardTitle>
           <CardDescription>
-          Un total de {voters.length} votantes registrados
+          Un total de {voters?.length || 0} votantes registrados
           </CardDescription>
         </CardHeader>
         <CardContent>
