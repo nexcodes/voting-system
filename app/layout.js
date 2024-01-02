@@ -15,7 +15,7 @@ function containsWord(string, word) {
   return string.includes(word);
 }
 
-const identifier = "atenea";
+const identifier = "";
 
 export default async function RootLayout({ children }) {
   const user = await currentUser();
